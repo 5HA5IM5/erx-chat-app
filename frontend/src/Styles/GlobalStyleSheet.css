@@ -1,0 +1,696 @@
+/* ********************************** HOMEPAGE STYLING ******************* */
+.homepage {
+  display: flex;
+  width: 100%;
+}
+.homepage-left {
+  flex: 0.3;
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-3.jpg");
+}
+.homepage-left-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 36px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.homepage-left-image {
+  height: 70px;
+  object-fit: contain;
+  display: flex;
+  margin-bottom: 10px;
+}
+.homepage-left-heading {
+  color: rgb(130, 132, 159);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+.homepage-left-text {
+  color: rgb(82, 81, 82);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.homepage-right {
+  flex: 0.7;
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-right-heading {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 13vh;
+}
+
+.homepage-right-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.tab-link {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.tab-link:hover,
+.tab-link:hover {
+  transition: 200ms ease-in;
+}
+
+.tab-link:after,
+.tab-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.tab-link:hover:after,
+.tab-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* ********************************** HOMEPAGE STYLING ENDS HERE******************* */
+
+/* ********************************** LOGIN STYLING ******************* */
+.login {
+  margin-top: 10px;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-form-group > label {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.login-form-group > input {
+  height: 60px;
+  width: 451px;
+  border-radius: 10.2px;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  padding-left: 10px;
+}
+
+.login-form-group > ::-webkit-input-placeholder {
+  font-weight: 540;
+  padding-left: 13px;
+  font-size: 15px;
+}
+
+.login-btn {
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  width: 10vw;
+}
+
+.login-submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32vw;
+}
+.forgot-pass {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+}
+/* ********************************** LOGIN STYLING ENDS HERE******************* */
+
+/* ********************************** SIGNUP STYLING ******************* */
+.signup {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form-groups {
+  display: flex;
+  justify-content: space-between;
+  width: 37vw;
+}
+
+.signup-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.signup-form-group > input {
+  height: 60px;
+  width: 240px;
+  border-radius: 10.2px;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  padding-left: 10px;
+}
+.signup-form-group > label {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.signup-submit-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-file-upload {
+  border: 2px solid white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 20vw;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: transparent;
+  padding-left: 80px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.signup-file-upload::-webkit-file-upload-button {
+  display: none;
+}
+
+.signup-file-upload::before {
+  content: "Upload Picture";
+  text-align: center;
+  color: white;
+}
+
+.signup-btn {
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  width: 20vw;
+}
+/* ********************************** SIGNUP STYLING ENDS HERE******************* */
+
+/* ********************************** LOADER STYLING ******************* */
+.loading-container {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.loading-container:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 0.8));
+
+  background: -webkit-radial-gradient(
+    rgba(20, 20, 20, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+.loading-container .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: spin 2s ease infinite;
+}
+.loading-container .item:nth-child(1) {
+  width: 50px;
+  height: 50px;
+}
+.loading-container .item:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  animation-delay: 0.1s;
+}
+.loading-container .item:nth-child(3) {
+  width: 90px;
+  height: 90px;
+  animation-delay: 0.2s;
+}
+.loading-container .item:nth-child(4) {
+  width: 110px;
+  height: 110px;
+  animation-delay: 0.3s;
+}
+@keyframes spin {
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+/* ********************************** LOADER STYLING ENDS HERE ******************* */
+
+/* ********************************** HEADER STYLING ******************* */
+
+.header {
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 4px;
+  width: 98.5vw;
+  margin-left: 5px;
+  border-radius: 5px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.header-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.header-corner-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.1;
+}
+
+/* ********************************** HEADER STYLING ENDS HERE ******************* */
+
+/* ********************************** CHATPAGE STYLING ******************* */
+.chatpage-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chatpage {
+  display: flex;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.chatpage-sidenav {
+  flex: 0.05;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.css-1696fkf-MuiSvgIcon-root {
+  cursor: pointer;
+}
+.css-1696fkf-MuiSvgIcon-root:hover {
+  color: gainsboro;
+  transition: 300ms ease-in-out;
+}
+.chatpage-sidenav-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 50vh;
+}
+.chatpage-left {
+  flex: 0.3;
+  border-radius: 5px;
+  border: 3px solid #efefef;
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-3.jpg");
+}
+
+.chatpage-right {
+  background-image: url("https://dev-portal.evolutionrx.us/assets/admin/media/bg/bg-3.jpg");
+  background-size: cover;
+  flex: 0.64;
+  border: 3px solid #efefef;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.chatpage-tab-link {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.chatpage-left-tab-link {
+  color: black;
+  font-size: 22px;
+  font-weight: 540;
+  cursor: pointer;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.chatpage-left-tab-link:hover {
+  transition: 200ms ease-in;
+}
+
+.chatpage-left-tab-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.chatpage-left-tab-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.chatpage-active {
+  color: black;
+}
+/* ********************************** CHATPAGE STYLING ENDS HERE******************* */
+
+/* ********************************** SIDE DRAWER ******************* */
+.sidedrawer-search {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchTerm {
+  width: 70%;
+  border: 2px solid #3eadcf;
+  border-right: none;
+  padding: 5px;
+  height: 38px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #1c1c1c;
+}
+
+.searchButton {
+  width: 40px;
+  height: 38px;
+  border: 1px solid #3eadcf;
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.sidedrawer-list-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ********************************** SIDE DRAWER ENDS HERE ******************* */
+
+/* ********************************** USER LIST ITEM ******************* */
+
+.UserListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border: 1px solid #009ef7;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 400ms ease-in-out;
+}
+
+.UserListItem:hover {
+  background-color: #009ef7;
+  color: white;
+}
+.UserListItem-desc {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.UserListItem-desc > p {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+}
+.UserListItem > a {
+  color: RoyalBlue;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.UserListItem > a:hover {
+  color: CornflowerBlue;
+}
+
+.UserListItem > .circle {
+  line-height: 0;
+  display: inline-block;
+  margin: 5px;
+  border: 4px solid rgba(200, 200, 200, 0.4);
+  border-radius: 50%;
+  transition: linear 0.25s;
+  height: 70px;
+  width: 70px;
+}
+.UserListItem > .circle img {
+  border-radius: 50%;
+}
+
+.UserListItem > .circle:hover {
+  transition: ease-out 0.2s;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: ease-out 0.2s;
+}
+
+.UserListItem > a.circle {
+  color: transparent;
+}
+/* ********************************** USER LIST ITEM ENDS HERE ******************* */
+
+/* ********************************** MY CHATS STYLING******************* */
+.mychats {
+  height: 80px;
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+.mychats-listitem :hover {
+  background-color: #009ef7;
+  color: white;
+  transition: 400ms ease-in-out;
+}
+.mychats-content {
+  border: 1px solid #009ef7;
+  border-radius: 5px;
+  height: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.mychats-content > p {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ********************************** MY CHATS STYLING ENDS HERE******************* */
+
+/* ********************************** SINGLE CHAT STYLING******************* */
+.singlechat-startchat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.singlechat-startchat > h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.singlechat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.singlechat > p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.singlechat-chatbox {
+  background-color: #efefef;
+  height: 74vh;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.msginput {
+  background-color: #e0e0e0;
+  border: 1px solid gainsboro;
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  padding-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.2;
+  margin-left: 10px;
+}
+.wrapper .file-upload {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #2590eb 50%, #fff 50%);
+  background-size: 100% 200%;
+  transition: all 1s;
+  color: #fff;
+  font-size: 30px;
+}
+.wrapper .file-upload input[type="file"] {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper .file-upload:hover {
+  background-position: 0 -100%;
+  color: #2590eb;
+}
+
+.message-form-group {
+  display: flex;
+}
