@@ -1,4 +1,4 @@
-import { ViewIcon } from "@chakra-ui/icons";
+import { SettingsIcon, ViewIcon } from "@chakra-ui/icons";
 import {
   Modal,
   ModalOverlay,
@@ -13,6 +13,10 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
+import WifiCalling3 from "@mui/icons-material/WifiCalling3";
+import DuoIcon from '@mui/icons-material/Duo';
+import { Link } from "react-router-dom";
+
 
 const ProfileModal = ({ user, children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +26,13 @@ const ProfileModal = ({ user, children }) => {
       {children ? (
         <span onClick={onOpen}>{children}</span>
       ) : (
-        <IconButton d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
+        <div className="chat_option">
+          <WifiCalling3 />
+          <Link to={'/call'}>
+            <DuoIcon />
+          </Link>
+          <IconButton d={{ base: "flex" }} icon={<SettingsIcon />} onClick={onOpen} />
+        </div>
       )}
       <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />

@@ -76,6 +76,9 @@
 
 .active {
   color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .hide {
@@ -100,7 +103,7 @@
   bottom: 0;
   left: 0;
   background-color: rgb(255, 255, 255);
-  transform-origin: bottom right;
+  transform-origin: top right;
   transition: transform 0.25s ease-out;
 }
 
@@ -574,7 +577,7 @@
 .mychats {
   height: 80px;
   width: 90%;
-  margin-top: 30px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -694,3 +697,57 @@
 .message-form-group {
   display: flex;
 }
+
+.chat_option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.2;
+}
+
+/* ****************************VIDEO PLAYER STYLE STARTS HERE *********************************** */
+.videoPlayer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.videostream {
+  border: 1px solid black;
+}
+.videoPlayer-video {
+  height: 300px;
+  border: 1px solid black;
+}
+.videoChat {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.option-boxes {
+  display: flex;
+}
+
+.option-input {
+  border: 1px solid black;
+}
+
+.hangbutton {
+  background-color: red;
+  color: white;
+}
+.callbtn {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.call-feat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ****************************VIDEO PLAYER STYLE ENDS HERE *********************************** */
